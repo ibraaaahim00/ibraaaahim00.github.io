@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Alaa — Backend Developer</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Ibrahim Alaa is a Backend Developer working with PHP, Laravel, MySQL, and REST APIs.">
+    <meta name="keywords" content="Ibrahim Alaa, Backend Developer, PHP, Laravel, REST API, Repository Pattern, MySQL, Clean Architecture, Portfolio">
+    <meta name="author" content="Ibrahim Alaa">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ibrahim Alaa — Backend Developer | PHP & Laravel">
+    <meta property="og:description" content="Explore real Laravel case studies, clean architecture implementations, and database concurrency solutions.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- =========================================================================
+         NAVIGATION BAR
+         ========================================================================= -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-wrapper">
+            <a href="#hero" class="brand-logo">
+                <span>Ibrahim Alaa</span>
+                <span class="brand-badge">&lt;/&gt; Backend</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#github" class="nav-link">GitHub</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="assets/cv/Ibrahim_Alaa_CV.pdf" download class="btn btn-secondary btn-sm" id="navCvBtn" title="Download Curriculum Vitae">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span>CV</span>
+                </a>
+                <a href="https://github.com/ibraaaahim00" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" title="GitHub Profile">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    <span>GitHub</span>
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- =========================================================================
+             HERO SECTION
+             ========================================================================= -->
+        <section class="hero-section" id="hero">
+            <div class="container">
+                <div class="hero-kicker">
+                    <span class="kicker-line"></span>
+                    <span>Backend systems / PHP / Laravel</span>
+                </div>
+
+                <h1 class="hero-title">Ibrahim Alaa</h1>
+                <div class="hero-role">Backend Developer — PHP / Laravel</div>
+                
+                <p class="hero-lead">
+                    I build the backend behind orders, appointments, and real-world workflows — with Laravel, MySQL, and APIs that keep business rules clear.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        <span>View Projects</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span>Contact Me</span>
+                    </a>
+                    <a href="assets/cv/Ibrahim_Alaa_CV.pdf" download class="btn btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        <span>Download CV</span>
+                    </a>
+                    <a href="https://github.com/ibraaaahim00" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+
+                <aside class="hero-aside" aria-label="A glimpse at Ibrahim's backend work">
+                    <div class="terminal-window">
+                        <div class="terminal-topbar">
+                            <span class="terminal-dots"><i></i><i></i><i></i></span>
+                            <span class="terminal-file">BookingService.php</span>
+                        </div>
+                        <div class="terminal-code">
+                            <div><span class="code-muted">01</span> <span class="code-key">return</span> DB::<span class="code-accent">transaction</span>(<span class="code-key">function</span> () {</div>
+                            <div><span class="code-muted">02</span> &nbsp;&nbsp;$slot = AvailabilitySlot::<span class="code-accent">lockForUpdate</span>();</div>
+                            <div><span class="code-muted">03</span> &nbsp;&nbsp;$slot-&gt;<span class="code-accent">update</span>(['is_booked' =&gt; true]);</div>
+                            <div><span class="code-muted">04</span> &nbsp;&nbsp;<span class="code-key">return</span> Appointment::<span class="code-accent">create</span>($data);</div>
+                            <div><span class="code-muted">05</span> });</div>
+                        </div>
+                    </div>
+                    <p class="hero-note"><span>Currently showing</span> the decisions behind a few selected projects.</p>
+                </aside>
+
+                <!-- Engineering Pillars -->
+                <div class="hero-pillars-grid" id="heroPillarsContainer">
+                    <!-- Populated dynamically via main.js from portfolioData.pillars -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             ABOUT ME SECTION
+             ========================================================================= -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">A little about the work</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-desc">Backend work is mostly about making the complicated parts predictable.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I am a Backend Developer focused on building robust, maintainable systems using PHP and Laravel. Rather than relying on simple CRUD generators, I prioritize architectural clarity: separating business rules into dedicated Service layers, isolating persistence behind Repository contracts, and enforcing strict data transitions through typed Enums.
+                        </p>
+                        <p>
+                            My experience includes designing secure RESTful APIs protected by Laravel Sanctum, preventing concurrency race conditions through pessimistic database row locking, and integrating real-world payment gateways like MyFatoorah.
+                        </p>
+                        <p>
+                            I believe good backend engineering is measured by how predictably a system handles edge cases, protects data integrity across multi-step transactions, and allows new features to be added without breaking existing contracts.
+                        </p>
+
+                        <div class="about-philosophy-card">
+                            <div class="about-philosophy-title">Engineering Philosophy</div>
+                            <div class="about-philosophy-text">
+                                "Controllers should orchestrate, Form Requests should validate, Services should decide, Repositories should persist, and Database Transactions should guarantee."
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                Primary Language
+                            </span>
+                            <span class="spec-val">PHP 8.2+</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                                Primary Framework
+                            </span>
+                            <span class="spec-val">Laravel (10/11/12)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                                Database Engine
+                            </span>
+                            <span class="spec-val">MySQL / Eloquent</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                Authentication
+                            </span>
+                            <span class="spec-val">Sanctum / RBAC / OTP</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 9.17l4.24-4.24M14.83 14.83l4.24 4.24M9.17 14.83l-4.24 4.24"/></svg>
+                                Concurrency
+                            </span>
+                            <span class="spec-val">lockForUpdate / Atomic DB</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Location
+                            </span>
+                            <span class="spec-val">Egypt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             TECHNICAL SKILLS SECTION
+             ========================================================================= -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">The toolkit</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-desc">Technologies and patterns I have used while building the projects below.</p>
+                </div>
+
+                <div class="skills-tabs" id="skillsTabs">
+                    <!-- Populated dynamically via main.js -->
+                </div>
+
+                <div class="skills-grid" id="skillsContainer">
+                    <!-- Populated dynamically via main.js from portfolioData.skills -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             PROJECTS CASE STUDIES (FLAGSHIP SECTION)
+             ========================================================================= -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Selected work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-desc">A closer look at the systems, trade-offs, and backend problems behind five real codebases.</p>
+                </div>
+
+                <div class="project-filters" id="projectFilters">
+                    <!-- Populated dynamically via main.js -->
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Populated dynamically via main.js in exact requested priority -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             WORK EXPERIENCE & TRAINING
+             ========================================================================= -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Experience</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-desc">The roles and training that shaped how I approach backend development.</p>
+                </div>
+
+                <div class="timeline" id="experienceTimeline">
+                    <!-- Populated dynamically via main.js from portfolioData.experience -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             GITHUB REPOSITORIES SHOWCASE
+             ========================================================================= -->
+        <section class="github-section" id="github">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">The code</span>
+                    <h2 class="section-title">GitHub Repositories</h2>
+                    <p class="section-desc">The source is public. Start with the repositories that best show how I work.</p>
+                </div>
+
+                <div class="github-profile-card">
+                    <div class="github-user-info">
+                        <img src="https://avatars.githubusercontent.com/u/275179930?v=4" alt="Ibrahim Alaa Avatar" class="github-avatar" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'72\' height=\'72\' viewBox=\'0 0 24 24\' fill=\'%2338BDF8\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'">
+                        <div>
+                            <div class="github-user-name">Ibrahim Alaa</div>
+                            <div class="github-user-handle">@ibraaaahim00</div>
+                        </div>
+                    </div>
+
+                    <a href="https://github.com/ibraaaahim00" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        <span>Visit GitHub Profile</span>
+                    </a>
+                </div>
+
+                <div class="github-repos-grid" id="githubReposGrid">
+                    <!-- Populated dynamically via main.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             RESUME DOWNLOAD SECTION
+             ========================================================================= -->
+        <section class="about-section" id="resume">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Resume</span>
+                    <h2 class="section-title">Resume & Background</h2>
+                    <p class="section-desc">A concise version of my experience, skills, and selected projects.</p>
+                </div>
+
+                <div class="pillar-card" style="padding: 2.5rem; text-align: center; max-width: 600px; margin: 0 auto;">
+                    <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(244, 63, 94, 0.1); color: var(--primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Ibrahim Alaa — CV (PDF)</h3>
+                    <p style="color: var(--text-muted); font-size: 0.925rem; margin-bottom: 1.5rem;">
+                        The file is kept here so it can be replaced with the latest version whenever it is ready.
+                    </p>
+                    <a href="assets/cv/Ibrahim_Alaa_CV.pdf" download class="btn btn-primary" style="display: inline-flex;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        <span>Download Resume (PDF)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             CONTACT SECTION
+             ========================================================================= -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Say hello</span>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-desc">For a role, a project, or just a technical conversation, you can find me here.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div>
+                        <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Contact Information</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            Contact details will be added here soon. For now, the public code is the best place to get a feel for my work.
+                        </p>
+
+                        <div class="contact-info-list">
+                            <div class="contact-item contact-placeholder" id="contactEmailItem">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-val">Email — add your address</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item contact-placeholder" id="contactPhoneItem">
+                                <div class="contact-icon" style="color: var(--secondary); background: rgba(56, 189, 248, 0.1);">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">Phone</div>
+                                    <div class="contact-val">Phone — add your number</div>
+                                </div>
+                            </div>
+
+                            <a href="https://github.com/ibraaaahim00" target="_blank" rel="noopener noreferrer" class="contact-item">
+                                <div class="contact-icon" style="color: #cbd5e1; background: rgba(255, 255, 255, 0.05);">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">GitHub</div>
+                                    <div class="contact-val">github.com/ibraaaahim00</div>
+                                </div>
+                            </a>
+
+                            <div class="contact-item contact-placeholder" id="contactLinkedinItem">
+                                <div class="contact-icon" style="color: #0A66C2; background: rgba(10, 102, 194, 0.1);">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                </div>
+                                <div>
+                                    <div class="contact-label">LinkedIn</div>
+                                    <div class="contact-val">LinkedIn — add your profile</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label" for="formName">Full Name</label>
+                            <input type="text" id="formName" name="name" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="formEmail">Email Address</label>
+                            <input type="email" id="formEmail" name="email" class="form-control" placeholder="e.g. sarah@company.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="formSubject">Subject</label>
+                            <input type="text" id="formSubject" name="subject" class="form-control" placeholder="e.g. Backend Developer Opportunity / Inquiry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="formMessage">Message</label>
+                            <textarea id="formMessage" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================================================
+         FOOTER
+         ========================================================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-text">
+                &copy; <span id="currentYear"></span> Ibrahim Alaa.
+            </div>
+            <div class="footer-note">
+                Built with semantic HTML, CSS, and vanilla JavaScript.
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================================================
+         TECHNICAL CASE STUDY MODAL CONTAINER
+         ========================================================================= -->
+    <div class="modal-overlay" id="caseStudyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <h3 id="modalTitle">Case Study Title</h3>
+                    <p id="modalSubtitle">Architecture / Tech Stack</p>
+                </div>
+                <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Case Study">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+
+            <div class="modal-body" id="modalBody">
+                <!-- Case Study Details injected dynamically via main.js -->
+            </div>
+
+            <div class="modal-footer">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modalGithubBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    <span>View Repository on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        Form status
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/portfolio-data.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
